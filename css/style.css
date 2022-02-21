@@ -16,6 +16,7 @@
 
 }
 
+/*nawigacja i nagłówek*/
 header {
     width: 100vw;
     display: flex;
@@ -45,17 +46,18 @@ nav {
 }
 header ul {
     display: flex;
-    font-family: var(--font-Open) bold;
+    font-family: var(--font-Open);
+    font-weight: bold;
     font-size: 11px;
     color: var(--color-grey);
 
 }
-li:not(.nav__contact) {
+header li:not(.nav__contact) {
     margin-right: 95px;
 }
 
 
-li:hover {
+header li:hover {
     color: #000000;
     text-decoration: underline 4px;
     text-decoration-color: var(--color-primary);
@@ -76,7 +78,7 @@ li:hover {
     flex-direction: column;
     align-items: center;
 }
-header h1 {
+h1 {
     font-family: var(--font-Raleway);
     font-size: 49px;
 }
@@ -95,6 +97,8 @@ header button {
     border-radius: 40px;
     box-shadow: 5px 10px 14px var(--color-primary-shadow);
 }
+
+/*Statystyki*/
 .statistics {
     display: flex;
     flex-direction: column;
@@ -165,6 +169,7 @@ img + p {
 
 }
 
+/*benefity*/
 
 .benefits {
     display: flex;
@@ -191,6 +196,7 @@ img + p {
     content: "";
     width: 328px;
     border: 4px solid var(--color-redish);
+    background-color: var(--color-redish);
     position: absolute;
     margin-top: 50px;
     margin-left: 36px;
@@ -266,6 +272,7 @@ img + p {
 .box_phone .box_text::after {
     content: "";
     border:4px solid var(--color-primary);
+    background-color: var(--color-primary);
 }
 .benefits__box3 {
     display: flex;
@@ -284,6 +291,7 @@ img + p {
 .box_trumpet .box_text::after {
     content: "";
     border: 4px solid var(--color-green);
+    background-color: var(--color-green);
 }
 .rectangle {
     width: 440px;
@@ -301,3 +309,189 @@ img + p {
 .box_trumpet p {
     width: auto;
 }
+
+.pricing {
+    display: flex;
+    justify-content: center;
+}
+.pricing .container {
+    display: flex;
+    flex-direction: column;
+    width: 1266px;
+}
+.pricing h2 {
+    margin-bottom: 50px;
+}
+
+.pricing .container>div {
+    display: flex;
+    align-items: center;
+}
+.pricing_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 372px;
+    height: 461px;
+    border: 1px solid var(--color-redish);
+    border-radius: 18px;
+    margin-right: 59px;
+}
+h4 {
+    font-family: var(--font-Raleway);
+    font-weight: bold;
+    font-size: 20px;
+    color: #13253B;
+    margin: 34px 0 14px 0;
+}
+h3 {
+    font-family: var(--font-Open);
+    font-weight: lighter;
+    font-size: 46px;
+    color: var(--color-redish);
+    margin-top: 14px;
+    margin-bottom: calc(69px - 20px);
+}
+.pricing_box ul {
+    font-family: var(--font-Open);
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing_box li {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    /*align-items: center;*/
+}
+.pricing_box li::before {
+    content: url("../assets/Ckechmark-1.svg");
+    width: 5px;
+    height: 5px;
+    display: flex;
+}
+.pricing_box .basic li:nth-child(1n + 4)::before {
+    content: url("../assets/Close.svg");
+    width: 5px;
+    height: 5px;
+    display: flex;
+}
+.pricing_box .professional li:last-child::before {
+    content: url("../assets/Close.svg");
+    width: 5px;
+    height: 5px;
+    display: flex;
+}
+.profes_1 {
+    width: 405px;
+    height: 500px;
+    box-shadow: 5px 10px 27px var(--color-primary-shadow);
+    border: 1px solid #07ACE6;
+}
+.prem_1 {
+    border: 1px solid var(--color-green);
+}
+
+.professional p {
+    margin-bottom: calc(61px - 20px);
+}
+.premium p {
+    margin-bottom: calc(50px - 20px);
+}
+.premium h3,
+.professional h3 {
+    margin: 0;
+}
+.premium p,
+.professional p {
+    font-family: var(--font-Raleway);
+    font-weight: bold;
+    font-size: 12px;
+}
+.pricing_box button {
+    width: 150px;
+    height: 50px;
+    border-radius: 23px;
+    border: none;
+    background-color: #EB476E;
+    color: white;
+    font-family: var(--font-Open);
+    font-weight: bold;
+    font-size: 13px;
+    position: relative;
+    top: 7%;
+}
+.professional button {
+    width: 165px;
+    background-color: #07ACE6;
+    box-shadow: 5px 10px 14px var(--color-primary-shadow);
+}
+.premium button {
+    background-color: #55DFB4;
+}
+/*KONTAKT*/
+.contact {
+    display: flex;
+    justify-content: center;
+    margin-top: 179px;
+}
+.contact .container {
+    display: flex;
+    width: 896px;
+}
+.contact p {
+    font-family: var(--font-Open);
+    font-size: 16px;
+
+}
+.questions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info {
+    display: flex;
+    gap: 57px;
+}
+.info p {
+    color: var(--color-grey);
+}
+.mail,
+.phone {
+    display: flex;
+    align-items: center;
+}
+.mail::before {
+    content: url("../assets/Mail Icon.svg");
+    width: 27px;
+    height: 27px;
+}
+.phone::before {
+    content: url("../assets/Phone Icon.svg");
+    width: 27px;
+    height: 27px;
+}
+.questions>p {
+    margin: 22px 0 42px 0;
+}
+
+
+.leave_name {
+    width: 440px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+input[type="text"],
+input[type="email"] {
+    width: 440px;
+    height: 57px;
+    outline: none;
+    border-bottom: 1px solid #95989A;
+}
+
