@@ -55,16 +55,12 @@ header ul {
 header li:not(.nav__contact) {
     margin-right: 95px;
 }
-
-
 header li:hover {
     color: #000000;
     text-decoration: underline 4px;
     text-decoration-color: var(--color-primary);
     text-underline-offset: 26px;
     cursor: pointer;
-
-
 }
 .opener {
     margin-top: 130px;
@@ -72,7 +68,6 @@ header li:hover {
     display: flex;
     justify-content: center;
 }
-
 .opener .container {
     display: flex;
     flex-direction: column;
@@ -120,7 +115,6 @@ h2 {
     flex-direction: column;
     align-items: center;
 }
-
 .box1,
 .box2 {
     margin-right: 185px;
@@ -152,7 +146,9 @@ img + p {
     font-family: var(--font-Raleway);
     font-weight: 800;
     font-size: 20px;
+    letter-spacing: 6px;
 }
+
 
 .boxes .box1 p:nth-child(2),
 .boxes .box3 p:nth-child(2) {
@@ -276,6 +272,7 @@ img + p {
 }
 .benefits__box3 {
     display: flex;
+    margin-bottom: 105px;
 }
 .box_trumpet {
     width: 623px;
@@ -441,6 +438,7 @@ h3 {
 }
 .contact .container {
     display: flex;
+    align-items: flex-start;
     width: 896px;
 }
 .contact p {
@@ -478,20 +476,82 @@ h3 {
 .questions>p {
     margin: 22px 0 42px 0;
 }
-
-
 .leave_name {
     width: 440px;
 }
 form {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
 }
 input[type="text"],
 input[type="email"] {
     width: 440px;
     height: 57px;
+    border: 0;
     outline: none;
     border-bottom: 1px solid #95989A;
+    padding-bottom: 43px;
+
+}
+input[type="email"] {
+    margin-bottom: 30px;
 }
 
+input::placeholder {
+    color: #08A6E4;
+    font-size: 11px;
+}
+.tick {
+    font-size: 12px;
+    color: #707070;
+    display: flex;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    display: flex;
+    color: blue;
+    height: 24px;
+    flex-shrink: 0;
+    flex-basis: 24px;
+    border: 1px solid #95989A;
+    border-radius: 4px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.tick input:checked {
+    background-image: url("../assets/Checkmark.svg");
+    background-size: cover;
+
+}
+.leave_name button {
+    width: 226px;
+    height: 57px;
+    margin-top: 20px;
+    margin-bottom: 59px;
+    border: 0;
+    border-radius: 35px;
+    box-shadow: 5px 10px 14px var(--color-primary-shadow);
+    background-color: var(--color-primary);
+    color: white;
+    font-family: var(--font-Open);
+    font-weight: bold;
+    font-size: 13px;
+}
+
+footer nav {
+    box-shadow: 0 -5px 40px #00000029;
+}
+footer .logo {
+    font-size: 26px;
+    margin: 20px 0 6px 0;
+}
+footer p {
+    color: var(--color-grey);
+    font-size: 11px;
+    margin-bottom: 17px;
+}
+.icons > a {
+    margin-right: 20px;
+}
