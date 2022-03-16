@@ -366,19 +366,19 @@ h3 {
     /*align-items: center;*/
 }
 .pricing_box li::before {
-    content: url("../assets/Ckechmark-1.svg");
+    content: url("../../assets/Ckechmark-1.svg");
     width: 5px;
     height: 5px;
     display: flex;
 }
 .pricing_box .basic li:nth-child(1n + 4)::before {
-    content: url("../assets/Close.svg");
+    content: url("../../assets/Close.svg");
     width: 5px;
     height: 5px;
     display: flex;
 }
 .pricing_box .professional li:last-child::before {
-    content: url("../assets/Close.svg");
+    content: url("../../assets/Close.svg");
     width: 5px;
     height: 5px;
     display: flex;
@@ -464,12 +464,12 @@ h3 {
     align-items: center;
 }
 .mail::before {
-    content: url("../assets/Mail Icon.svg");
+    content: url("../../assets/Mail Icon.svg");
     width: 27px;
     height: 27px;
 }
 .phone::before {
-    content: url("../assets/Phone Icon.svg");
+    content: url("../../assets/Phone Icon.svg");
     width: 27px;
     height: 27px;
 }
@@ -521,7 +521,7 @@ input[type="checkbox"] {
     cursor: pointer;
 }
 .tick input:checked {
-    background-image: url("../assets/Checkmark.svg");
+    background-image: url("../../assets/Checkmark.svg");
     background-size: cover;
 
 }
